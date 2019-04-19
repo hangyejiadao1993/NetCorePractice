@@ -27,5 +27,9 @@ namespace User.API.Controllers
         }
 
         
+        [HttpGet("Test")]
+        public async Task<string> Test(){
+            return "Test";
+        }
     }
 }

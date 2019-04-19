@@ -1,0 +1,14 @@
+/home/python/netcore/NetCorePractice/UseAPI/User.API/bin/Debug/netcoreapp2.2/User.API.deps.json
+/home/python/netcore/NetCorePractice/UseAPI/User.API/bin/Debug/netcoreapp2.2/User.API.runtimeconfig.json
+/home/python/netcore/NetCorePractice/UseAPI/User.API/bin/Debug/netcoreapp2.2/User.API.runtimeconfig.dev.json
+/home/python/netcore/NetCorePractice/UseAPI/User.API/bin/Debug/netcoreapp2.2/User.API.dll
+/home/python/netcore/NetCorePractice/UseAPI/User.API/bin/Debug/netcoreapp2.2/User.API.pdb
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.csprojAssemblyReference.cache
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.csproj.CoreCompileInputs.cache
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.RazorAssemblyInfo.cache
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.RazorAssemblyInfo.cs
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.AssemblyInfoInputs.cache
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.AssemblyInfo.cs
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.RazorTargetAssemblyInfo.cache
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.dll
+/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/Debug/netcoreapp2.2/User.API.pdb

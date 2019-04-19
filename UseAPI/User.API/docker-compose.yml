@@ -6,7 +6,7 @@ services:
     command: mysqld --character-set-server=utf8 --container-server=utf8_general_ci
     restart: always
     ports:
-      - "3306:3306"
+      - '3306:3306'
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: jesse
@@ -15,8 +15,8 @@ services:
       - /d/docker/beta/mysql-init:/docker-entrypoint-initdb.d
   web:
     build: .
-    container_name: aspnetcore
+    container_name: 'aspnetcore'
     ports:
-      - “8002:80”
+      - '8002:80'
     depends_on:
       - db  

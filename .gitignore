@@ -4,3 +4,4 @@
 # Ada Library Information
 *.ali
 /.vs/SignalRTest08/v16/Server/sqlite3
+/.vs/SignalRTest08/DesignTimeBuild

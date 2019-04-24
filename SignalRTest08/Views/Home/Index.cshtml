@@ -1,8 +1,44 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="lib/aspnet/signalr/dist/browser/signalr.min.js"></script>
+</head>
+<body>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+    <ul id="msgs"></ul>
+    <input type="text" id="txtMsg" /><input type="button" id="btnSend" value="send" />
+    <script type="text/javascript">
+        var txtMsg = document.getElementById("txtMsg");
+        var btnSend = document.getElementById("btnSend");
+        btnSend.disabled = true;
+        var connection = new signalR.HubConnectionBuilder().withUrl("/testHub", {accessTokenFactory:()=>'@ViewBag.access_token'}).build();
+        connection.on("OnMsg", function (date, message) {
+            var msg = date + ':' + message;
+            var li = document.createElement('li');
+            li.textContent = msg;
+            document.getElementById("msgs").appendChild(li);
+
+        });
+
+        connection.start().then(function () {
+            btnSend.disabled = false;
+        }).catch(function (err) {
+            alert(err);
+        });
+        btnSend.onclick = function () {
+            connection.invoke("SendMessage", txtMsg.value).then(function () {
+                txtMsg.value = '';
+                txtMsg.focus();
+            }).catch(function (err) {
+                alert(err);
+            });
+        };
+
+
+
+    </script>
+</body>
+</html>

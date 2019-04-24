@@ -36,7 +36,7 @@ namespace User.API.Data
 
                     if (!context.Users.Any())
                     {
-                        context.Users.Add(new AppUser { Name = "hobo" });
+                        context.Users.Add(new AppUser { Name = "jesse" });
                         context.SaveChanges();
                     }
                 }

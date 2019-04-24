@@ -24,8 +24,7 @@ namespace User.API.Data
             var retryForAvaiability = retry.Value;
 
 
-            try
-            {
+            
                 using (var scope = app.ApplicationServices.CreateScope())
                 {
                     var context = (UserContext)scope.ServiceProvider.GetService(typeof(UserContext));
@@ -40,17 +39,17 @@ namespace User.API.Data
                         context.SaveChanges();
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                if (retryForAvaiability < 10)
-                {
-                    retryForAvaiability++;
-                    var logger = loggerFactory.CreateLogger(typeof(UserContextSeed));
-                    logger.LogError(ex.Message);
-                    await SeedAsync(app, loggerFactory, retryForAvaiability);
-                }
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    if (retryForAvaiability < 10)
+            //    {
+            //        retryForAvaiability++;
+            //        var logger = loggerFactory.CreateLogger(typeof(UserContextSeed));
+            //        logger.LogError(ex.Message);
+            //        await SeedAsync(app, loggerFactory, retryForAvaiability);
+            //    }
+            //}
         }
 
     }

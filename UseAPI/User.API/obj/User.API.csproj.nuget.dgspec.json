@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/python/netcore/NetCorePractice/UseAPI/User.API/User.API.csproj": {}
+    "D:\\net\\NetCorePractice\\UseAPI\\User.API\\User.API.csproj": {}
   },
   "projects": {
-    "/home/python/netcore/NetCorePractice/UseAPI/User.API/User.API.csproj": {
+    "D:\\net\\NetCorePractice\\UseAPI\\User.API\\User.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/python/netcore/NetCorePractice/UseAPI/User.API/User.API.csproj",
+        "projectUniqueName": "D:\\net\\NetCorePractice\\UseAPI\\User.API\\User.API.csproj",
         "projectName": "User.API",
-        "projectPath": "/home/python/netcore/NetCorePractice/UseAPI/User.API/User.API.csproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/home/python/netcore/NetCorePractice/UseAPI/User.API/obj/",
+        "projectPath": "D:\\net\\NetCorePractice\\UseAPI\\User.API\\User.API.csproj",
+        "packagesPath": "C:\\Users\\LH\\.nuget\\packages\\",
+        "outputPath": "D:\\net\\NetCorePractice\\UseAPI\\User.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\LH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
@@ -70,6 +73,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

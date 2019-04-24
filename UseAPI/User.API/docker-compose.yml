@@ -3,7 +3,7 @@ services:
   db: 
     image: mysql
     container_name: db
-    command: mysqld --character-set-server=utf8 --container-server=utf8_general_ci
+    command: mysqld --character-set-server=utf8 --container-server=utf8_general_ci 
     restart: always
     ports:
       - '3306:3306'
